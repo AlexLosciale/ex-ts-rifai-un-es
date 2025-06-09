@@ -76,7 +76,7 @@ function App() {
   useEffect(() => {
     async function fetchData() {
       try {
-        const ricettaData = await getRicetta(1);
+        const ricettaData = await getRicetta(3); // Cambia l'ID per testare altre ricette
         setRicetta(ricettaData);
 
         const chefData = await getChef(ricettaData.userId);
